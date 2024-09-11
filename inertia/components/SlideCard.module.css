@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 296px;
+    height: 144px;
+    border-radius: 22px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    border-radius: 14px;
+    padding: 4px;
+    right: 8px;
+    top: 8px;
+    background-color: var(--grey);
+    transition: opacity 0.1s ease;
+  }
+  
+  .container:hover .iconContainer {
+    opacity: 1;
+  }
+  
+  
+  .button {
+    color: var(--blue);
+    margin-right: 8px;
+    width: 18px;
+  }
+
+  
